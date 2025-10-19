@@ -2,7 +2,7 @@
 
 欢迎来到我的生活博客源码仓库！这里记录了我在日常生活中的点滴思考、旅行见闻、兴趣探索与个人成长。博客基于 [Hexo](https://hexo.io/) 构建，采用简洁主题与自动化部署，力求打造一个温暖、真实、可持续更新的写作空间。
 
-👉 **博客地址**：[https://yourusername.github.io](https://yourusername.github.io)
+👉 **博客地址**：[https://brucegeng66.github.io](https://brucegeng66.github.io)
 
 ---
 
