@@ -17,7 +17,7 @@ date: 2023-04-07 14:05:24
 
 I got my Ph.D. from [National University of Singapore](https://nus.edu.sg/) in 01/2024. and BS degree from [Southern University of Science and Technology](https://www.sustech.edu.cn/) in 07/2018.
 
-For more details, see my [personal homepage](https://gengxingri.github.io/homepage/).
+For more details, see my [personal homepage](https://gengxingri.github.io).
 
 
 ---
