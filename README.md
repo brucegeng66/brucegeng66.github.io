@@ -19,7 +19,7 @@ hexo server
 
 # 如需清理缓存并重新生成页面
 hexo clean
-hexo generate
+hexo generate && hexo deploy
 
 ```
 
