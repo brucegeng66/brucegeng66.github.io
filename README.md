@@ -2,7 +2,7 @@
 
 这是我的 Hexo 博客源码仓库，包含所有文章、配置和主题，致力于构建一个 **结构清晰、自动化部署、可复现** 的技术写作平台。
 
-👉 **部署地址**：[https://gengxr.github.io](https://brucegeng66.github.io)
+👉 **部署地址**：[https://brucegeng.github.io](https://brucegeng66.github.io)
 
 ---
 
