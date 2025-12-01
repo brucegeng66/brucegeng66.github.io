@@ -1,0 +1,118 @@
+# Hexo Configuration
+
+# ============================================================
+# 1. 站点基本信息 (Site)
+# ============================================================
+title: Xingri Geng's Blog
+author: Xingri Geng # 建议添加
+timezone: Asia/Shanghai # 添加，重要
+
+# ============================================================
+# 2. 链接与路由 (URL)
+# ============================================================
+## 如果绑定了域名，url 填写 'https://你的域名'
+url: https://brucegeng66.github.io/ 
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # 【优化】设为 false，去掉URL末尾的 index.html，更美观
+  trailing_html: true   # 保持 true，生成静态 .html 文件
+
+# ============================================================
+# 3. 目录结构 (Directory)
+# ============================================================
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# ============================================================
+# 4. 写作设置 (Writing)
+# ============================================================
+new_post_name: :title.md # 新文章的文件名
+default_layout: post
+titlecase: false
+external_link:
+  enable: true # 在新标签页打开外部链接
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true  # 【推荐】开启资源文件夹，方便存放与文章同名的图片文件夹
+relative_link: false
+future: true             # 允许发布未来日期的文章
+
+# ============================================================
+# 5. 代码高亮 (Highlight)
+# ============================================================
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: '    '    # 【优化】将 Tab 替换为4个空格，避免代码缩进错乱
+  wrap: true
+  hljs: false
+prismjs:                 # 保持关闭，避免与 highlight 冲突
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# ============================================================
+# 6. 首页与分页 (Pagination)
+# ============================================================
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date # 按日期降序（新的在前）
+
+per_page: 10      # 每页文章数量
+pagination_dir: page
+
+# ============================================================
+# 7. 分类与标签 (Category & Tag)
+# ============================================================
+default_category: uncategorized
+category_map:
+tag_map:
+
+# ============================================================
+# 8. 元数据与日期 (Metadata & Date)
+# ============================================================
+meta_generator: true
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime' # 使用文件最后修改时间作为更新时间
+
+# ============================================================
+# 9. 扩展插件与主题 (Extensions)
+# ============================================================
+# 社交链接（这些通常会被主题引用）
+zhihu_username: chenmoquxijing
+github_username: brucegeng66
+twitter_username: Bruce
+linkedin_username: xingri-geng
+# RSS 设置
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true # 【优化】设为 true，RSS中包含全文，方便读者订阅阅读
+
+# 主题设置
+theme: hexo-theme-hueman
+
+# ============================================================
+# 10. 部署 (Deployment)
+# ============================================================
+deploy:
+  type: git 
+  # 注意：git@github-bruce 是你本地配置的 SSH Alias，换电脑时需注意修改
+  repo: git@github-bruce:brucegeng66/brucegeng66.github.io.git
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}" # 【优化】自动添加部署时间到 commit 信息

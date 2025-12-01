@@ -1,0 +1,11 @@
+.DS_Store
+.deploy_git/
+Thumbs.db
+# Hexo 生成的静态文件，绝对不能上传到源码分支
+public/
+# 数据库文件
+db.json
+# 依赖包文件夹
+node_modules/
+# 临时文件/缓存
+.hexo/
